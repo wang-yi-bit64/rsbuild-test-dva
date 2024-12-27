@@ -12,7 +12,7 @@
     "bignumber.js": "^5.0.0",
     "classnames": "^2.2.5",
     "dva": "^2.6.0-beta.23",
-    "dva-loading": "^1.0.4",
+    "dva-loading": "^3.0.25",
     "ejs-loader": "^0.3.0",
     "html2canvas": "^1.0.0-rc.5",
     "jquery": "^3.5.1",
