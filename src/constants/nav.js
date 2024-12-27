@@ -32,15 +32,6 @@ export const getNavData = app => [
                     component: () => import("../routes/detail")
                 })
             },
-            {
-                name: "表单",
-                path: '/form',
-                component: dynamic({
-                    app,
-                    models: () => [],
-                    component: () => import("../routes/form")
-                })
-            }
         ]
     }
 ]
