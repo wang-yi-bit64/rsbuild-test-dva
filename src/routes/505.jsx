@@ -3,7 +3,7 @@ import React from 'react';
 function Unauthorized() {
   return (
     <div>
-      405
+      Unauthorized
     </div>
   );
 }

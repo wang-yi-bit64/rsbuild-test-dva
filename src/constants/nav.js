@@ -1,12 +1,11 @@
-import dynamic from "dva/dynamic"
-
+const dynamic = require("dva").dynamic
 export const getNavData = app => [
     {
         layoutName: "AppLayout",
 		layout: dynamic({
 			app,
 			models: () => [],
-			component: () => import("../layouts")
+			component: () => import("../layouts/index.jsx")
 		}),
         children: [
             {
@@ -20,7 +19,7 @@ export const getNavData = app => [
                 component: dynamic({
 					app,
 					models: () => [],
-					component: () => import("../routes/list")
+					component: () => import("../routes/list.jsx")
 				})
             },
             {
@@ -29,7 +28,7 @@ export const getNavData = app => [
                 component: dynamic({
                     app,
                     models: () => [],
-                    component: () => import("../routes/detail")
+                    component: () => import("../routes/detail.jsx")
                 })
             },
         ]

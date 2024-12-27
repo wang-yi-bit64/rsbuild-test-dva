@@ -4,7 +4,7 @@ import createLoading from "dva-loading"
 import "moment/locale/zh-cn"
 import moment from "moment"
 import {notification} from "antd"
-import router from "./router"
+import Routers from "./router"
 
 moment.locale("zh-cn")
 
@@ -41,9 +41,9 @@ const app = dva({
 })
 
 // 2. Model
-app.model(require("./models/app"))
+app.model(require("./models/app").default)
 // 3. Router
-app.router(router)
+app.router(Routers)
 
 // 4. Start
 app.start("#root")

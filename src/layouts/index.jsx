@@ -1,9 +1,9 @@
 import React, {PureComponent} from "react"
 import {connect, router} from "dva"
 import Helmet from "react-helmet"
-import {styles} from "../components/layouts/index"
-import NotFound from "../routes/index/404"
-import Unauthorized from "../routes/index/505"
+import styles from "../components/layouts/index.less"
+import NotFound from "../routes/404.jsx"
+import Unauthorized from "../routes/505.jsx"
 import "../themes/index.less"
 import "./index.less"
 
@@ -17,7 +17,6 @@ class App extends PureComponent {
 			<div>
 				<Helmet>
 					<title>{name}</title>
-					<link rel="icon" href={logo} type="image/x-icon"/>
 				</Helmet>
 				<div>
 						<div className={styles.container}>
@@ -36,13 +35,13 @@ class App extends PureComponent {
 													exact
 													key={item.path}
 													path={item.path}
-													component={item.auth ? item.component : Unauthorized}
+													component={item.component}
 												/>)
 											return value
 										})
 									}
 									<Route component={NotFound}/>
-								</Switch>}
+								</Switch>
 							</div>
 						</div>
 					</div>
