@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Layouts() {
+function Sidebar() {
   return (
     <div>
-      Layouts
+      Sidebar
     </div>
   );
 }
 
-export default Layouts;
+export default Sidebar;

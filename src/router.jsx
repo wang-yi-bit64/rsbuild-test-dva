@@ -6,7 +6,7 @@ import {router} from "dva"
 import {ConfigProvider, Spin} from "antd"
 import zhCN from "antd/lib/locale-provider/zh_CN"
 import {getNavData} from "./constants/nav"
-import styles from "./components/layouts/index.less"
+import styles from "./layouts/index.module.less"
 console.log("🚀 ~ styles:", styles)
 
 const dynamic = require("dva").dynamic

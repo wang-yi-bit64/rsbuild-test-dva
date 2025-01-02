@@ -3,7 +3,6 @@
  */
 
 import farmJsPluginLess from '@farmfe/js-plugin-less';
-import react from "@farmfe/plugin-react"
 export default {
   plugins: [
     farmJsPluginLess({
@@ -12,7 +11,7 @@ export default {
         },
         // implementation: require("less"),
     }),
-    react(),
+    "@farmfe/plugin-react",
     ['@farmfe/plugin-react-components', { 
         local: false,
         dts: false,
